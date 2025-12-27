@@ -209,7 +209,6 @@ if [ "$BUILD_SUCCESS" = true ]; then
         fi
     done
     echo ""
-    echo "💡 To verify 16KB alignment, run: ./verify_alignment.sh"
     exit 0
 else
     echo ""
