@@ -164,7 +164,7 @@ for ABI in "${ABIS[@]}"; do
         esac
 
         FOUND_STL=false
-        for HOST in linux-x86_64 darwin-x86_64 darwin-aarch64; do
+        for HOST in darwin-arm64 linux-x86_64 darwin-x86_64 darwin-aarch64; do
             # Try multiple search locations for libc++_shared.so
             for CANDIDATE in \
                 "$NDK_DIR/toolchains/llvm/prebuilt/$HOST/sysroot/usr/lib/$TARGET_TRIPLET/21/libc++_shared.so" \
